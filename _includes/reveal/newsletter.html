@@ -1,0 +1,49 @@
+<div class="reveal white" id="newsletter" data-reveal>
+
+  <div class="grid-x grid-padding-x grid-padding-y">
+    <div class="small-12 medium-12 cell text-center">
+      <h2>Newsletter</h2>
+    </div>
+  </div>
+
+  <div class="grid-x grid-padding-x grid-padding-y">
+    <div class="small-12 medium-12 cell">
+  
+
+      <form action="{{site.subscribe}}" method="post" data-abide novalidate>
+    
+        <div data-abide-error class="alert callout" style="display: none;">
+          <p><i class="fi-alert"></i>There are some errors in your form.</p>
+        </div>
+      
+      <div class="grid-x grid-padding-x">
+
+      <div class="small-12 medium-12 cell">
+        <label>Email — Required
+          <input type="email" name="EMAIL" placeholder="your@email.com" required pattern="email">
+        </label>
+      </div>
+      
+      <div class="small-12 medium-12 cell">
+      <small>You can unsubscribe at any time by clicking the link in the footer of our emails. For information view our <a href="/privacy-policy/">privacy policy</a></small>
+      </div>
+
+
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5a522bc71b24b7202b6bf2c95_57602bb40c" tabindex="-1" value=""></div>
+
+      <div class="small-12 medium-12 cell padding-top-2">
+        <input type="submit" class="button expanded text-uppercase" value="Submit" name="subscribe">
+      </div>
+
+      </div>
+
+      </form>
+  
+    </div>
+  </div>
+
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+  <svg class="icon icon-x"><use xlink:href="/assets/icons/symbol-defs.svg#icon-x"></use></svg>
+  </button>
+
+</div>
