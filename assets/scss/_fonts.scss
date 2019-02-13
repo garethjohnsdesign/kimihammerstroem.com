@@ -1,4 +1,13 @@
 @font-face {
+  font-family: 'P22 Underground Medium';
+  src: 
+  url('../fonts/p22-underground-medium.woff2') format('woff2'), 
+  url('../fonts/p22-underground-medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Beausite Text Light';
   src: 
   url('../fonts/beausite-text-light.woff2') format('woff2'), 

@@ -1,0 +1,69 @@
+---
+layout: default
+---
+
+<!-- Page Content -->
+{% assign content = page.content | strip_newlines %}
+{% unless content == ""  %}
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y align-center padding-bottom-1">
+    <div class="small-12 medium-6 cell text-center">
+      {{ page.content | markdownify }}
+    </div>
+  </div>
+</div>
+{% endunless %}
+<!-- End Page Content -->
+
+<div class="grid-container">
+<div class="grid-x grid-padding-x grid-padding-y align-center text-center">
+  <div class="small-10 medium-8 cell">
+   <div><a href="mailto:info@kimihammerstroem.com" target="_top">info@kimihammerstroem.com</a></div>
+   <div><a href="tel:+44-79-0097-2712" rel="nofollow">+44 (0)79 0097 2712</a></div>
+</div>
+</div>
+
+<div class="grid-container">
+<div class="grid-x grid-padding-x grid-padding-y align-center text-center">
+  <div class="small-10 medium-8 cell">
+   <small>All artwork and photography are copyrighted and protected under international copyright laws. Artwork may not be reproduced in any form, stored, or manipulated without prior written permission from {{site.title}} and the copyright holders.</small>
+  </div>
+</div>
+</div>
+
+<div class="grid-x grid-padding-y grid-padding-x align-center">
+  <div class="small-12 cell text-center">
+    <a href="http://www.57festivals.com"><svg class="icon icon-festivals"><use xlink:href="/assets/icons/symbol-defs.svg#icon-festivals"></use></svg></a>
+    <ul class="menu align-center">
+    <li><a href="/privacy-policy"><small>© {{'now' | date: "%Y"}} {{site.title}}</small></a></li>
+    <li><a href="/privacy-policy"><small>Privacy Policy</small></a></li>
+    <li><a href="/terms-and-conditions"><small>Terms and Conditions</small></a></li>
+    </ul>
+  </div>
+</div>
+
+<!--
+<div class="grid-container">
+<div class="grid-x grid-padding-x grid-padding-y align-center text-center">
+  <div class="small-10 medium-8 large-6 xxlarge-4 cell">
+    <a href="https://www.garethjohnsdesign.com">Site by Reformation</a>
+  </div>
+</div>
+</div>
+-->
+
+<div class="grid-x align-center">
+  <div class="shrink cell">
+    {% if site.social %}
+      <ul class="menu">
+        {% for item in site.social %}  
+        <li><a href="{{ item[1] }}" target="_blank" rel="noopener"><span class="show-for-sr">{{ item[0] }}</span><svg class="icon icon-socials icon-{{ item[0] }}"><use xlink:href="/assets/icons/symbol-defs.svg#icon-{{ item[0] }}"></use></svg></a></li>
+        {% endfor %} 
+      </ul>
+    {% else %}
+      <ul class="menu">
+        <li><a href="mailto:{{site.email}}">{{site.email}}</a></li>
+      </ul>
+    {% endif %}
+  </div>
+</div>

@@ -34,6 +34,8 @@ kramdown:
 highlighter: rouge
 email: info@kimihammerstroem.com
 subscribe: 
+social:
+  instagram: https://www.instagram.com/kimihammerstroem/
 analytics:
 logo: "/assets/img/logo.svg"
 per_page: 12
