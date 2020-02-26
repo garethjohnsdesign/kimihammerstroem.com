@@ -1334,7 +1334,7 @@ body {
   margin: 0;
   padding: 0;
   background: #fefefe;
-  font-family: "Neue Haas Unica Pro", sans-serif;
+  font-family: "P22 Mackinac Book", serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -5217,7 +5217,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Neue Haas Unica Pro", sans-serif;
+  font-family: "P22 Mackinac Book", serif;
   font-style: normal;
   font-weight: normal;
   color: inherit;
@@ -8820,7 +8820,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     display: block;
     white-space: pre;
     padding: 4px 12px;
-    font-family: "Neue Haas Unica Pro", sans-serif;
+    font-family: "P22 Mackinac Book", serif;
     font-size: 1rem; }
     .lg-outer .lg-dropdown a:hover {
       background-color: rgba(0, 0, 0, 0.07); }
@@ -9756,8 +9756,7 @@ p a {
   border-bottom: 1px solid #0a0a0a; }
 
 .logo {
-  font-family: "Bressay Regular", serif;
-  letter-spacing: 0.5px; }
+  font-family: "P22 Mackinac Book", serif; }
 
 .sans-light {
   font-family: "GT America Medium", sans-serif; }
